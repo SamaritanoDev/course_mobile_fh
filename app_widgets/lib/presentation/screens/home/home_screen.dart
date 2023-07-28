@@ -49,10 +49,16 @@ class _CustomListTile extends StatelessWidget {
     final color = Theme.of(context).colorScheme;
 
     return ListTile(
-      leading: Icon(menuItem.icon, color: color.primary),
+      leading: Icon(
+        menuItem.icon,
+        color: color.primary,
+      ),
       title: Text(menuItem.title),
       subtitle: Text(menuItem.subTitle),
-      trailing: Icon(Icons.arrow_forward_ios_rounded, color: color.primary),
+      trailing: Icon(
+        Icons.arrow_forward_ios_rounded,
+        color: color.primary,
+      ),
       onTap: () {
         // Navigator.pushNamed(context, menuItem.link);
         context.push(menuItem.link);
