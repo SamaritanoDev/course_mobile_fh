@@ -16,7 +16,7 @@ class MainApp extends StatelessWidget {
       title: 'Hello World',
       routerConfig: appRouter,
       // theme: ThemeData(useMaterial3: true),
-      theme: AppTheme(selectedColor: 5).getTheme(),
+      theme: AppTheme(selectedColor: 1).getTheme(),
     );
   }
 }
