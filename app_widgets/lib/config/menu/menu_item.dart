@@ -32,4 +32,16 @@ const appMenuItem = <MenuItem>[
     link: '/progress',
     icon: Icons.refresh_sharp,
   ),
+  MenuItem(
+    title: 'Snackbars & dialogs',
+    subTitle: 'Indicadores en pantalla',
+    link: '/snackbar',
+    icon: Icons.info,
+  ),
+  MenuItem(
+    title: 'UI controls + Tiles',
+    subTitle: 'Una serie de controles de FLutters',
+    link: '/iu-controls',
+    icon: Icons.car_rental_rounded,
+  ),
 ];

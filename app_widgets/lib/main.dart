@@ -13,7 +13,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      title: 'Hello World',
+      title: 'Flutter Widgets',
       routerConfig: appRouter,
       theme: AppTheme(selectedColor: 1).getTheme(),
     );
