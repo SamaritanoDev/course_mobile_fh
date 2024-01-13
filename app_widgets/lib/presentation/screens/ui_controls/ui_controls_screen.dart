@@ -28,6 +28,9 @@ class _UIControlsView extends StatefulWidget {
 class _UIControlsViewState extends State<_UIControlsView> {
   bool isDeveloper = true;
   Transportation selectedTransportation = Transportation.boat;
+  bool wantsBreakfast = false;
+  bool wantsLunch = false;
+  bool wantsDinner = false;
 
   @override
   Widget build(BuildContext context) {
@@ -82,6 +85,29 @@ class _UIControlsViewState extends State<_UIControlsView> {
               }),
             ),
           ],
+        ),
+
+        //todo: checkbox
+        CheckboxListTile(
+          title: const Text('Desayuno'),
+          value: wantsBreakfast,
+          onChanged: (value) => setState(() {
+            wantsBreakfast = !wantsBreakfast;
+          }),
+        ),
+        CheckboxListTile(
+          title: const Text('Almuerzo'),
+          value: wantsLunch,
+          onChanged: (value) => setState(() {
+            wantsLunch = !wantsLunch;
+          }),
+        ),
+        CheckboxListTile(
+          title: const Text('Cena'),
+          value: wantsDinner,
+          onChanged: (value) => setState(() {
+            wantsDinner = !wantsDinner;
+          }),
         ),
       ],
     );
